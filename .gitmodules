@@ -10,3 +10,6 @@
 [submodule "pt-v5-vault/lib/owner-manager-contracts"]
 	path = pt-v5-vault/lib/owner-manager-contracts
 	url = https://github.com/pooltogether/owner-manager-contracts
+[submodule "pt-v5-vault/lib/brokentoken"]
+	path = pt-v5-vault/lib/brokentoken
+	url = https://github.com/GenerationSoftware/brokentoken
