@@ -1,0 +1,33 @@
+[submodule "pt-v5-vault/lib/forge-std"]
+	path = pt-v5-vault/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+	branch = v1
+[submodule "pt-v5-vault/lib/openzeppelin-contracts"]
+	path = pt-v5-vault/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
+	branch = release-v4.9
+[submodule "pt-v5-vault/lib/erc4626-tests"]
+	path = pt-v5-vault/lib/erc4626-tests
+	url = https://github.com/a16z/erc4626-tests
+[submodule "pt-v5-vault/lib/owner-manager-contracts"]
+	path = pt-v5-vault/lib/owner-manager-contracts
+	url = https://github.com/pooltogether/owner-manager-contracts
+[submodule "pt-v5-vault/lib/brokentoken"]
+	path = pt-v5-vault/lib/brokentoken
+	url = https://github.com/GenerationSoftware/brokentoken
+[submodule "pt-v5-vault/lib/pt-v5-prize-pool"]
+	path = pt-v5-vault/lib/pt-v5-prize-pool
+	url = https://github.com/GenerationSoftware/pt-v5-prize-pool
+	branch = main
+[submodule "pt-v5-vault/lib/pt-v5-twab-controller"]
+	path = pt-v5-vault/lib/pt-v5-twab-controller
+	url = https://github.com/generationsoftware/pt-v5-twab-controller
+	branch = main
+[submodule "pt-v5-vault/lib/pt-v5-liquidator-interfaces"]
+	path = pt-v5-vault/lib/pt-v5-liquidator-interfaces
+	url = https://github.com/generationsoftware/pt-v5-liquidator-interfaces
+	branch = main
+[submodule "pt-v5-vault/lib/pt-v5-claimable-interface"]
+	path = pt-v5-vault/lib/pt-v5-claimable-interface
+	url = https://github.com/GenerationSoftware/pt-v5-claimable-interface
+	branch = main
