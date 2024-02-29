@@ -28,3 +28,8 @@
 	url = https://github.com/generationsoftware/pt-v5-liquidator-interfaces
 [submodule "lib/pt-v5-liquidator-interfaces"]
 	branch = main
+[submodule "pt-v5-vault/lib/pt-v5-claimable-interface"]
+	path = pt-v5-vault/lib/pt-v5-claimable-interface
+	url = https://github.com/GenerationSoftware/pt-v5-claimable-interface
+[submodule "lib/pt-v5-claimable-interface"]
+	branch = main
