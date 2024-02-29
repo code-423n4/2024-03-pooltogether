@@ -75,22 +75,6 @@ You can then consult the report by opening `coverage/index.html`:
 open coverage/index.html
 ```
 
-### Code quality
-
-[Husky](https://typicode.github.io/husky/#/) is used to run [lint-staged](https://github.com/okonet/lint-staged) and tests when committing.
-
-[Prettier](https://prettier.io) is used to format TypeScript and Solidity code. Use it by running:
-
-```
-npm run format
-```
-
-[Solhint](https://protofire.github.io/solhint/) is used to lint Solidity files. Run it with:
-
-```
-npm run hint
-```
-
 ### Tests
 
 You can run tests with the following commands:
@@ -99,13 +83,3 @@ You can run tests with the following commands:
 - **fuzz tests:** `npm run fuzz`
 - **invariant tests:** `npm run invariant`
 - **integration tests:** `npm run integration` (*informative for which integrations have potential issues*)
-
-### CI
-
-A default Github Actions workflow is setup to execute on push and pull request.
-
-It will build the contracts and run the test coverage.
-
-You can modify it here: [.github/workflows/coverage.yml](.github/workflows/coverage.yml)
-
-For the coverage to work, you will need to setup the relevant `{X}_RPC_URL` repository secrets in the settings of your Github repository.
