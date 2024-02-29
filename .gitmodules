@@ -23,3 +23,8 @@
 	url = https://github.com/generationsoftware/pt-v5-twab-controller
 [submodule "lib/pt-v5-twab-controller"]
 	branch = main
+[submodule "pt-v5-vault/lib/pt-v5-liquidator-interfaces"]
+	path = pt-v5-vault/lib/pt-v5-liquidator-interfaces
+	url = https://github.com/generationsoftware/pt-v5-liquidator-interfaces
+[submodule "lib/pt-v5-liquidator-interfaces"]
+	branch = main
