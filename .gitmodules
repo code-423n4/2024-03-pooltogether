@@ -7,3 +7,6 @@
 [submodule "pt-v5-vault/lib/erc4626-tests"]
 	path = pt-v5-vault/lib/erc4626-tests
 	url = https://github.com/a16z/erc4626-tests
+[submodule "pt-v5-vault/lib/owner-manager-contracts"]
+	path = pt-v5-vault/lib/owner-manager-contracts
+	url = https://github.com/pooltogether/owner-manager-contracts
