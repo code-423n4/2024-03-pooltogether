@@ -1,0 +1,12 @@
+ds-test/=lib/forge-std/lib/ds-test/src/
+erc4626-tests/=lib/erc4626-tests/
+forge-std/=lib/forge-std/src/
+
+brokentoken/=lib/brokentoken/src/
+openzeppelin/=lib/openzeppelin-contracts/contracts/
+owner-manager-contracts/=lib/owner-manager-contracts/contracts/
+
+pt-v5-liquidator-interfaces/=lib/pt-v5-liquidator-interfaces/src/interfaces/
+pt-v5-twab-controller=lib/pt-v5-twab-controller/src/
+pt-v5-prize-pool/=lib/pt-v5-prize-pool/src/
+pt-v5-claimable-interface/=lib/pt-v5-claimable-interface/src/
