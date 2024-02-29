@@ -18,3 +18,8 @@
 	url = https://github.com/GenerationSoftware/pt-v5-prize-pool
 [submodule "lib/pt-v5-prize-pool"]
 	branch = main
+[submodule "pt-v5-vault/lib/pt-v5-twab-controller"]
+	path = pt-v5-vault/lib/pt-v5-twab-controller
+	url = https://github.com/generationsoftware/pt-v5-twab-controller
+[submodule "lib/pt-v5-twab-controller"]
+	branch = main
