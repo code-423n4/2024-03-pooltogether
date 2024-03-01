@@ -255,4 +255,4 @@ You can run tests with the following commands:
 
 ## Miscellaneous
 
-Employees of [SPONSOR NAME] and employees' family members are ineligible to participate in this audit.
+Employees of PoolTogether and employees' family members are ineligible to participate in this audit.
