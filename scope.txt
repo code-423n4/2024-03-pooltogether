@@ -1,0 +1,6 @@
+pt-v5-vault/src/PrizeVault.sol
+pt-v5-vault/src/PrizeVaultFactory.sol
+pt-v5-vault/src/TwabERC20.sol
+pt-v5-vault/src/abstract/Claimable.sol
+pt-v5-vault/src/abstract/HookManager.sol
+pt-v5-vault/src/interfaces/IVaultHooks.sol
