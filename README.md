@@ -132,7 +132,8 @@ If an attacker can deny yield accrual for an entire day or longer, this would be
   - [Yearn V3](https://github.com/yearn/yearn-vaults-v3)
   - [Beefy](https://docs.beefy.finance/developer-documentation/other-beefy-contracts/beefywrapper-contract)
   - [sDAI](https://docs.spark.fi/defi-infrastructure/sdai-overview)
-  - [Yield Daddy Aave V3 Wrapper](https://github.com/timeless-fi/yield-daddy/blob/main/src/aave-v3/AaveV3ERC4626.sol))
+  - [Yield Daddy Aave V3 Wrapper](https://github.com/timeless-fi/yield-daddy/blob/main/src/aave-v3/AaveV3ERC4626.sol)
+  - [Yield Daddy Lido Wrapper](https://github.com/timeless-fi/yield-daddy/blob/main/src/lido/StETHERC4626.sol)
 
 ## Main invariants
 
@@ -251,6 +252,8 @@ You can run tests with the following commands:
 - **fuzz tests:** `npm run fuzz`
 - **invariant tests:** `npm run invariant`
 - **integration tests:** `npm run integration` (*informative for which integrations have potential issues*)
+  - *Not all integration tests are passing since some tested integrations have issues (yield source is paused, has some kind of fee, or some aspects couldn't be tested)*.
+  - If you want to run your own integration tests against a live 4626 yield source, copy one of the existing tests (ex. [SimpleTokenPool.t.sol](https://github.com/code-423n4/2024-03-pooltogether/blob/main/pt-v5-vault/test/integration/simple/SimpleTokenPool.t.sol)) and edit the information to match the yield source you would like to test.
 
 
 ## Miscellaneous
