@@ -39,6 +39,8 @@ The prize vault requires an underlying ERC4626 yield vault to earn yield on depo
 
 # Overview
 
+📽️ Checkout the [***Prize Vault Walkthrough Video***](https://ipfs.io/ipfs/bafybeigjlvmcieuc3j7lypxg2653jaxukbnsbj44kcvqsukfyt6sgskhgm)! [*(alt. link)*](https://bafybeigjlvmcieuc3j7lypxg2653jaxukbnsbj44kcvqsukfyt6sgskhgm.ipfs.dweb.link/) 📽️
+
 > This audit is for the PoolTogether V5 `PrizeVault` contract, factory and inherited contracts. The `PrizeVault` is a redesigned and refactored version of the previous [`Vault`](https://github.com/GenerationSoftware/pt-v5-vault/blob/3d082a29f26d060cfd0a75fc13861b62bf9d3699/src/Vault.sol) contract, which was discovered to have integration issues with various underlying yield vaults. The new prize vault is designed to be fully compliant with the ERC4626 specification and to interface cleanly with as many underlying yield vaults as possible.
 
 The `PrizeVault` takes deposits of an asset and earns yield with the deposits through an underlying yield vault. The yield is then expected to be liquidated and contributed to the prize pool as prize tokens. The depositors of the prize vault will then be eligible to win prizes from the pool. If a prize is won, The permitted claimer contract for the prize vault will claim the prize on behalf of the winner. Depositors can also set custom hooks that are called directly before and after their prize is claimed.
@@ -124,6 +126,8 @@ If an attacker can deny yield accrual for an entire day or longer, this would be
 
 ## Attack ideas (Where to look for bugs)
 
+The following are recommended places to start looking for bugs/issues. This list is non-exhaustive, so make sure to follow your own instincts as well!
+
 - Accounting Issues
 - TwabERC20 ERC20 standard compliance
 - PrizeVault ERC4626 standard compliance
@@ -134,6 +138,10 @@ If an attacker can deny yield accrual for an entire day or longer, this would be
   - [sDAI](https://docs.spark.fi/defi-infrastructure/sdai-overview)
   - [Yield Daddy Aave V3 Wrapper](https://github.com/timeless-fi/yield-daddy/blob/main/src/aave-v3/AaveV3ERC4626.sol)
   - [Yield Daddy Lido Wrapper](https://github.com/timeless-fi/yield-daddy/blob/main/src/lido/StETHERC4626.sol)
+
+It's also important that we don't repeat the same mistakes from the past! Check out these two previous issues that were found in the prior version of the vault:
+- [Forceful deposit through `depositWithPermit`](https://gov.pooltogether.com/t/v5-vault-medium-risk-disclosure/3124)
+- [Miscalculation of `totalAssets` in vaults using Aave V3](https://gov.pooltogether.com/t/v5-vault-collateralization-issue/3170)
 
 ## Main invariants
 
