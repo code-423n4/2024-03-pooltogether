@@ -1,12 +1,12 @@
 # PoolTogether audit details
-- Total Prize Pool: $36,500 in USDC
+- Total Prize Pool: $37,700 in USDC
   - HM awards: $24,750 in USDC
   - Analysis awards: $1,500 in USDC
   - QA awards: $750 in USDC
   - Bot Race awards: $2,250 in USDC
   - Gas awards: $750 in USDC
   - Judge awards: $3,600 in USDC
-  - Lookout awards: $2,400 USDC 
+  - Lookout awards: $3,600 USDC 
   - Scout awards: $500 in USDC
  
 - Join [C4 Discord](https://discord.gg/code4rena) to register
