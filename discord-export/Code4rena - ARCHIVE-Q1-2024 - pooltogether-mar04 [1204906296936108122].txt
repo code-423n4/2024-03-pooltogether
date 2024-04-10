@@ -1,0 +1,1185 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q1-2024 / pooltogether-mar04
+==============================================================
+
+[03/01/2024 20:33] knownfactc4_29311 (pinned)
+👋 Hello and welcome to the audit channel for the $36,500 in USDC **PoolTogether** audit!
+
+📆 Audit opens 03/04/2024 20:00 (20:00 UTC) and runs through 03/11/2024 19:00 (20:00 UTC) (7 days).
+
+ℹ️ **New approach to warden questions:** For this audit, we’re piloting a new Q&A process. Please help us test it out!
+
+1. **Ask your question via private thread:** Create a private thread asking your question and tag in @RaymondFam, who will be helping wardens with questions throughout the audit.
+2. 🤖 **Documentation bot assistance:** While waiting for a response, you will have an option to get an answer from our documentation bot. The bot will make its best attempt to answer based on the codebase and documentation, and link you to relevant resources.
+3. 🧑‍💻 **Human help appears!** @RaymondFam will review warden questions daily and reply to either validate the documentation bot answer, or provide additional clarification. 
+4. ❌ **Please don’t tag the sponsor team.** @RaymondFam will escalate any complex or challenging questions to the sponsor team. 
+5. :c4: **C4 staff will monitor all question threads,** so if you have any questions or concerns about this process, you can ask those in-thread too. 
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this audit, consider enabling notifications for this channel. 🐺 ⏰
+
+Audit Page: https://code4rena.com/audits/2024-03-pooltogether
+
+{Reactions}
+✅ (7) chefskiss (3) poolspinning hyperpooly 
+
+[03/01/2024 20:33] knownfactc4_29311
+Pinned a message.
+
+
+[03/04/2024 20:02] m4k2
+Hey, I think the text isn't well written here :
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - pooltogether-mar04 [1204906296936108122].txt_Files/image-E9708.png
+
+{Reactions}
+➕ 
+
+[03/04/2024 20:02] C4 (pinned)
+**Automated Findings / Publicly Known Issues**
+
+Reminder: all [Automated Findings / Publicly Known Issues](https://github.com/code-423n4/2024-03-pooltogether#automated-findings--publicly-known-issues) are out of scope and ineligible for awards.
+
+
+[03/04/2024 20:04] thebrittfactor
+Pinned a message.
+
+
+[03/04/2024 20:07] unpluggedtj
+Some MD issue here I guess
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - pooltogether-mar04 [1204906296936108122].txt_Files/image-62D68.png
+
+
+[03/04/2024 20:08] knownfactc4_29311
+Might be syntax error, taking a look.
+
+
+[03/04/2024 20:11] sweetjimmy_
+damn... 👀
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - pooltogether-mar04 [1204906296936108122].txt_Files/image-70B51.png
+
+
+[03/04/2024 20:12] knownfactc4_29311
+There we go a $ sign was breaking things. Should be readable now.
+
+{Reactions}
+✅ (3) 
+
+[03/04/2024 22:12] poeaudits
+How does the bot assistance work? Is there a command for it or through another process?
+
+
+[03/04/2024 22:15] itsmetechjay
+If you open a private thread and tag in RaymondFam, the documentation bot will respond asking if you'd like to opt-in to get an answer.
+
+
+[03/05/2024 00:08] sammytm
+Started a thread.
+
+
+[03/05/2024 04:43] Message Wolf#0225 (pinned)
+**Automated Findings / Publicly Known Issues**
+
+Automated findings output for the audit can be found [here](https://github.com/code-423n4/2024-03-pooltogether/blob/main/bot-report.md).
+
+*Note for C4 wardens: Anything included in the automated findings output is considered a publicly known issue and is ineligible for awards.*
+
+{Reactions}
+hi5 
+
+[03/05/2024 06:46] 0xsorrynotsorry
+Pinned a message.
+
+
+[03/05/2024 08:52] xkeywordx
+Guys, when I try to clone the repo, I get a fatal error error, repo not found
+
+```
+git clone https://github.com/code-423n4/2024-03-pooltogether/tree/main/pt-v5-vault
+Cloning into 'pt-v5-vault'...
+fatal: repository 'https://github.com/code-423n4/2024-03-pooltogether/tree/main/pt-v5-vault/' not found
+```
+
+
+[03/05/2024 08:52] xkeywordx
+Isn't this the repo that we should copy?
+
+
+[03/05/2024 08:52] xkeywordx
+and work with?
+
+
+[03/05/2024 08:53] xkeywordx
+I also tried cloning this repo https://github.com/GenerationSoftware/pt-v5-vault/tree/94b0c034c68b5318a25211a7b9f6d9ff6693e6ab and it doesn't work
+
+
+[03/05/2024 08:53] xkeywordx
+same error
+
+
+[03/05/2024 08:55] mctoady
+try:
+```
+git clone https://github.com/code-423n4/2024-03-pooltogether
+cd pt-v5-vault
+npm install
+forge build
+```
+
+
+[03/05/2024 08:55] xkeywordx
+Nvm my questions, found what I needed
+
+
+[03/05/2024 08:55] xkeywordx
+I forgot about the "view repo" button at the top. I was trying to copy the ones below. Sry, my bad
+
+{Reactions}
+salute 
+
+[03/05/2024 09:12] 0xauditism
+Has anyone changed `remappings.txt` in order to `forge build` ?
+
+
+[03/05/2024 09:13] mctoady
+i didn't, have you made sure you're in the pt-v5-vault directory not the root of the repo?
+
+
+[03/05/2024 09:14] 0xauditism
+yep
+
+
+[03/05/2024 09:26] 0xauditism
+`    function maxDeposit(address) public view returns (uint256) {` why is there an address arg here ?
+
+
+[03/05/2024 09:27] ronpetamgas666
+ig its cuz not every1 got same deposit limit
+
+{Reactions}
+👍 
+
+[03/05/2024 09:29] ronpetamgas666
+but check it out (that's my guess didn't check anything)
+
+
+[03/05/2024 09:44] brivan
+What errors you're having. 
+Everything was setup fine for me.
+
+
+[03/05/2024 09:46] 0xauditism
+```
+.../pooltogether/pt-v5-vault$ forge build
+[⠃] Compiling...2024-03-05T09:14:11.310484Z ERROR foundry_compilers::artifacts: error="/PT/pooltogether/pt-v5-vault/lib/openzeppelin-contracts/contracts/interfaces/IERC4626.sol": No such file or directory (os error 2)
+PT/pooltogether/pt-v5-vault/lib/openzeppelin-contracts/contracts/interfaces/IERC4626.sol": No such file or directory (os error 2); check configured remappings
+        --> PT/pooltogether/pt-v5-vault/src/PrizeVault.sol
+        openzeppelin/interfaces/IERC4626.sol
+```
+
+
+[03/05/2024 09:50] volokinn
+did you run forge install, before forge build?
+
+{Reactions}
+➕ 
+
+[03/05/2024 09:50] 0xauditism
+yeah but it doesn't do anything
+
+
+[03/05/2024 09:51] brivan
+For me, it was just executing: `npm i && forge install`
+
+
+[03/05/2024 09:51] brivan
+Not normal behavior
+
+
+[03/05/2024 09:52] 0xauditism
+Also I don't know if it s normal but I had to `git init` because `.git` file not found
+
+
+[03/05/2024 10:40] xkeywordx
+I think we ran into the same issue.
+
+1. Clone the repo
+2. cd into the actual pt-v5-vault directory
+3. run `npm i`
+4. run `forge install`
+5. Everything will work
+
+
+[03/05/2024 10:40] xkeywordx
+don't install anything before step 2, that's how I got the same error as you
+
+
+[03/05/2024 10:41] xkeywordx
+if you have to, delete your current repo, and clone it again and start over
+
+
+[03/05/2024 10:50] krayt78
+yeah i have the same issue
+
+
+[03/05/2024 10:52] xkeywordx
+I got the same error when it comes to husky and that .git thing
+
+{Reactions}
+🎉 
+
+[03/05/2024 10:52] xkeywordx
+just skip over it. Run forge install and everything should work fine. Contracts are compiling
+
+{Reactions}
+👍 
+
+[03/05/2024 10:55] xkeywordx
+I just presumed that the husky error is caused by me not installing direnv and icov.
+
+{Reactions}
+👍 
+
+[03/05/2024 10:56] 0xauditism
+Making progress thankzz
+
+
+[03/05/2024 10:56] 0xauditism
+turns out you shall not git init
+
+
+[03/05/2024 18:26] mgnfy_view
+How does the yield buffer work? It's kinda confusing
+
+
+[03/05/2024 19:48] novamanbg
+where can i find info about twabController?
+
+
+[03/05/2024 19:49] 0xauditism
+https://dev.pooltogether.com/protocol/design/twab-controller
+
+{Embed}
+https://dev.pooltogether.com/protocol/design/twab-controller
+Twab Controller | PoolTogether
+What is it?
+
+
+[03/05/2024 19:51] novamanbg
+ty
+
+
+[03/06/2024 00:58] raymondfam
+Under normal operation, (_totalAssets >= totalDebt_) is mandated to facilitate deposit. For example, if you don't have yield buffer in place for a newly and permissionlessly deployed Prize Vault, after the first deposit is made it will turned into lossy state right away because the yield vault would round down each time a deposit/withdraw is made by a single unit (or 1 wei if 18 decimal token is entailed).   
+
+In the NatSpec comment of yieldBuffer, an example where a reasonable yield buffer for USDC with 6 decimals might be 1e5 ($0.10), which will cover up to 100k rounding errors while still being an insignificant value is given. It simply means the yield vault could afford to do nothing while facilitating 100k deposits/withdraws.
+
+
+[03/06/2024 07:48] mgnfy_view
+Thanks!
+
+
+[03/06/2024 07:48] mgnfy_view
+What's `prizeIndex` here?
+
+
+[03/06/2024 07:48] mgnfy_view
+```javascript
+    function claimPrize(
+        address _winner,
+        uint8 _tier,
+        uint32 _prizeIndex,
+        uint96 _reward, // 79,228,162,514.264337593543950335 tokens
+        address _rewardRecipient
+    ) external onlyClaimer returns (uint256) {
+```
+
+
+[03/06/2024 07:55] mctoady
+if you start a private thread the AI documentation bot can help you out with stuff like this
+
+
+[03/06/2024 08:08] mgnfy_view
+Started a thread.
+
+
+[03/06/2024 08:22] 0xauditism
+I think u should do a private thread, or at least tag raymondFam so that the bot responds
+
+
+[03/06/2024 08:48] 0xauditism
+```
+@> As a rule of thumb, assets with lower PPD than USDC should not be assumed to be compatible since
+    /// the potential loss of a single unit rounding error is likely too high to be made up by yield at 
+    /// a reasonable rate. 
+```
+should we consider lower PPD tokens are out of scope ?
+
+
+[03/06/2024 09:53] brivan
+When creating a private thread, should I tag the lookout so the bot starts suggesting answers? Some questions I'm sure they can be answered easily by the bot. It would be annoying to bother the lookout by tagging him so the bot can start chatting
+
+
+[03/06/2024 09:56] kartoonjoy
+https://discord.com/channels/810916927919620096/1204906296936108122/1214335320108179496
+
+
+[03/06/2024 09:58] brivan
+Yea, that's what I'm talking about, 
+I have some questions that I'm sure the bot can clarify, it would be annoying (for Raymond) to tag him only to bring the bot into discussion.
+
+
+[03/06/2024 09:59] kartoonjoy
+To activate the bot, tag the lookout.
+
+{Reactions}
+👍 
+
+[03/06/2024 10:07] infectedfuture
+had the same concern, but it seems Raymond isn't the sponsor but the lookout. If he cannot help, he transfers the questions to the sponsor
+
+{Reactions}
+💯 
+
+[03/06/2024 14:16] souilos
+Question about the Yield liquidation process, the pair is always gonna be X/WETH right?
+
+
+[03/06/2024 14:18] souilos
+INFO : https://github.com/GenerationSoftware/pt-v5-autotasks-monorepo/tree/main/packages/arb-liquidator
+
+404 error
+
+
+[03/06/2024 14:28] 0xtotem
+For now, we require tagging the lookout because there's no guarantee that the question will be answered perfectly. It's always faster for Raymond to confirm or not a question rather than crafting one from scratch.
+
+You can always close the thread if you think the answer is enough for you.
+
+{Reactions}
+👌 thankyou (2) 
+
+[03/06/2024 16:34] raymondfam
+Correct. It is going to be a one way swap to prizeToken specific to the chain.
+
+
+[03/06/2024 17:01] 0xtotem
+Per popular demand, now the bot can be respawned in private and public threads only.
+For that, tag @Documentation Wolf  with your question in the same message.
+
+Note that it is not a chat bot, it won't remember your last messages.
+
+{Reactions}
+🔥 (3) 🎉 (3) 
+
+[03/06/2024 17:01] 0xtotem
+Started a thread.
+
+
+[03/06/2024 18:21] brivan
+In the `PrizeVault::deposithWithPermit`: https://github.com/code-423n4/2024-03-pooltogether/blob/480d58b9e8611c13587f28811864aea138a0021a/pt-v5-vault/src/PrizeVault.sol#L524-L534
+If the owner should be the msg.sender, what's the purpose of it then? What additional value it adds (the msg.sender  could call `asset.approve` directly)?
+Gas saving only?
+
+
+[03/06/2024 18:52] trmid
+This function is included to allow approval and deposit in one tx. The function doesn't need the  `_owner` param, but it was included for backwards interface compatibility with the old vault contract.
+
+{Reactions}
+thankyou (2) 
+
+[03/06/2024 20:25] youssefabk
+Started a thread.
+
+
+[03/06/2024 23:52] souilos
+Started a thread.
+
+
+[03/07/2024 08:29] pkqs90
+quick question: is there always a single PrizePool contract each chain? And the prizeToken is always POOL token?
+
+
+[03/07/2024 08:34] pkqs90
+Seems the "Prize token" listed on cabina app for each vault is actually refering to the token symbol of PrizeVault, instead of the prize token that is sent to PrizePool, which would always be POOL. Is this correct?
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - pooltogether-mar04 [1204906296936108122].txt_Files/image-43796.png
+
+
+[03/07/2024 13:29] 0xabhay.
+@RaymondFam anyone can create prize vault?
+
+
+[03/07/2024 13:38] infectedfuture
+yeah its permisioneless: https://v4.docs.pooltogether.com/protocol/guides/creating-vaults
+
+{Embed}
+https://v4.docs.pooltogether.com/protocol/guides/creating-vaults
+Creating a Vault | PoolTogether
+Creating a new Vault is the primary way in which to extend PoolTogether. Vaults represents asset and yield source combinations, so to add a new asset or yield source to the protocol you would simply create a new Vault and grow its deposits.
+
+{Reactions}
+👍 (3) 
+
+[03/07/2024 14:47] raymondfam
+There is always a single PrizePool contract on each chain catering to all Prize Vaults. The second part of your question on cabina app should be deemed out of scope for the contest.
+
+
+[03/07/2024 16:18] souilos
+Just to make sure I understand well the "Cumulative Balance", here some "actions" are missing from the schema right?
+
+Cumulative Balance couldn't be equal to $2200 only after the 2 deposits of $100?
+
+
+[03/07/2024 16:19] souilos
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - pooltogether-mar04 [1204906296936108122].txt_Files/Capture_decran_2024-03-07_a_13.19.33-329A5.png
+
+
+[03/07/2024 16:38] infectedfuture
+the cumulative is equal to balance * elapsed_time
+
+
+[03/07/2024 16:38] infectedfuture
+well more precisely its cumulative(t) = cumulative(t-1) + balance * elapsed_time
+
+
+[03/07/2024 16:42] infectedfuture
+so at t=2h 
+- cumulative was $200
+-  balance $200
+meaning at t=12h (+10h) : cumulative(t=12h) = $200 + 10 * $200 = $2200
+
+
+[03/07/2024 19:41] souilos
+Makes sense now thanks 👌
+
+
+[03/08/2024 04:55] trachev
+I don't know if it has been asked before, but can we have the address (or code) of the yieldVault?
+
+
+[03/08/2024 06:00] 0x11singh99
+also yieldVault contract  or it depends on user he can set whatever contract he want
+
+
+[03/08/2024 06:37] infectedfuture
+It is up to the prize vault deployer to also deploy the yield vault (or can chose an already existing one? not sure about that)
+
+
+[03/08/2024 10:03] brivan
+Yea, the deployer specifies the yield vault.
+
+{Reactions}
+👍🏻 (2) 
+
+[03/08/2024 10:36] tjaaark
+always love seeing how engaged the warden community is! Kudos to you all :chefskiss: 
+
+https://twitter.com/surfer__05/status/1765853513404268714
+https://twitter.com/RightNowIn/status/1765442608057168047
+
+{Embed}
+https://twitter.com/surfer__05/status/1765853513404268714
+SurfΞr_05 (@surfer__05) on X
+Making diagrams for the function calls seems pretty helpful. Tried making some for the @PoolTogether_  audit at @code4rena  .
+Code4rena - ARCHIVE-Q1-2024 - pooltogether-mar04 [1204906296936108122].txt_Files/GIGRDoUX0AAi8nd-D0A9A.png%3Alarge
+Twitter
+
+{Embed}
+https://twitter.com/RightNowIn/status/1765442608057168047
+Zaevlad | Pre-audit research (@RightNowIn) on X
+Once I posted a note of how to manage different users addresses in your Foundry tests. 
+
+And today, in @PoolTogether_ contest on Code4rena, I saw another interesting way to manage prank() calls from different users / roles in a single function. 
+
+Let's see in details ⬇️
+Code4rena - ARCHIVE-Q1-2024 - pooltogether-mar04 [1204906296936108122].txt_Files/GIAcbHkX0AAwjl8-B589A.jpg%3Alarge
+Twitter
+
+{Reactions}
+🙌 
+
+[03/08/2024 13:02] moeid3
+Hi
+Can `yieldVault` be made by anyone?
+
+
+[03/08/2024 15:29] raymondfam
+The yield source samples have been provided in the contest readme:
+
+Yield Source Integration Compatibility (ex. how is asset loss handled? what can break the integration?)
+Yearn V3
+Beefy
+sDAI
+Yield Daddy Aave V3 Wrapper
+Yield Daddy Lido Wrapper
+
+
+[03/08/2024 15:35] raymondfam
+You can make one or specify any yieldVault when deploying the Prize Vault, but as a trusted owner of the vault, the standard yield vault will be used. The idea is to garner as many users as possible to use your vault for the prize raffles and earn fees to the fee recipient.
+
+{Reactions}
+🙏 
+
+[03/08/2024 20:11] surfer_05
+@RaymondFam can you please explain what exactly is a liquidationPair here :
+```
+/// @notice Address of the liquidation pair used to liquidate yield for prize token.
+    address public liquidationPair;
+```
+
+
+[03/08/2024 20:21] raymondfam
+Further to what has been commented, it’s meant to swap the net yield asset to prize token by the liquidation source for a series of smooth tiered raffles specific for the prize vault.
+
+{Reactions}
+👍 
+
+[03/08/2024 20:23] raymondfam
+Here’s the link you may reference for more in depth info:
+
+
+[03/08/2024 20:23] raymondfam
+https://dev.pooltogether.com/protocol/guides/liquidating-yield
+
+{Embed}
+https://dev.pooltogether.com/protocol/guides/liquidating-yield
+Liquidating Yield | PoolTogether
+Tutorial: 💸 Creating an Arbitrage Swapping bot
+
+{Reactions}
+👍 
+
+[03/08/2024 20:39] surfer_05
+@RaymondFam isn't this wrong? I mean the name and symbol would be of the underlying asset that the vault will be holding. How can we name the share the ERC4626 vault mints? Correct me if I am understanding something wrong.
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - pooltogether-mar04 [1204906296936108122].txt_Files/image-E4AAE.png
+
+
+[03/08/2024 20:43] brivan
+The vault its self is an ERC20 token that represents the shares.
+
+{Reactions}
+👍 
+
+[03/08/2024 20:48] raymondfam
+Exactly. That’s how the vault shares are tracked by TwabController via the TwabERC20. The name and symbol are meant for TwabERC20.
+
+{Reactions}
+👍 
+
+[03/08/2024 21:28] infectedfuture
+You can find an implementation here: https://github.dev/GenerationSoftware/pt-v5-cgda-liquidator/blob/main/src/LiquidationPair.sol
+
+{Reactions}
+👍 
+
+[03/08/2024 21:30] infectedfuture
+This is the entrypoint for anyone who want to liquidate the yield of a prize vault
+
+
+[03/09/2024 08:43] ivanfitro
+whats the difference between deposit() and mint()? And withdraw() and redeem()?
+
+
+[03/09/2024 08:52] al_qa_qa
+- deposite:  you give the assets that you want (Mint me the number of shares that worth the value I passed to you)
+- mint: you give the shares you want to mint (Mint me these amount of shares.
+
+{Reactions}
+THIS 
+
+[03/09/2024 08:53] al_qa_qa
+But sicne Pool fixes the ration is 1:1 in normal and winning yields cases, they will look the same (In this contract not all ERC4626)
+
+
+[03/09/2024 08:54] ivanfitro
+ok all clear, thank you very much!
+
+{Reactions}
+🫡 
+
+[03/09/2024 10:07] mgnfy_view
+Why is address(0) used by TwabERC20 on events?
+
+
+[03/09/2024 12:07] al_qa_qa
+This is the standard for Minting and Burning ERC20 tokens.
+- Transfereing from address(0) means minting
+- Transfereing to address(0) means burning
+
+{Reactions}
+👍 (2) 
+
+[03/09/2024 21:12] moeid3
+In example of the dust collection strategy in walkthrough video:
+Alice made the 99$ stays at prize vault as dust
+And bob creates a new share with just 1$
+I thought Alice's future deposit gonna cover that 99$ to make new share not bob
+
+
+[03/10/2024 01:14] raymondfam
+The yield vault will be minting shares to the prize vault. The dust collection strategy in this case is simply to prevent donating dust to the yield vault. Alice and Bob will be respectively minted $99 and $1 worth of shares via TwabERC20 1:1 under normal operation regardless.
+
+
+[03/10/2024 11:12] ivanfitro
+what is the functionality of delegating to SPONSORSHIP_ADDRESS?
+
+
+[03/10/2024 12:19] yashpatel2003
+Any docs for understanding more about hooks?
+
+
+[03/10/2024 13:13] brivan
+https://dev.pooltogether.com/protocol/guides/prize-hooks
+
+{Embed}
+https://dev.pooltogether.com/protocol/guides/prize-hooks
+Using Prize Hooks | PoolTogether
+Prize hooks are modular onchain actions, configurable by a depositor, that automatically execute when a prize is claimed for them on a standard vault.
+
+
+[03/10/2024 15:35] raymondfam
+This is intended as another option for prize vault promotion. If an org or prize vault creator wants to juice up their user's chance of winning, they could sponsor it. Doing this will increase the odds of winnings for the vault users. In other words, it's typically called by the prize vault owner to promote a campaign and attract more users to use the vault.
+
+
+[03/10/2024 15:36] ivanfitro
+mmm...ok i understand, thank you!
+
+
+[03/10/2024 17:18] brivan
+Just out of curiosity, this codebase has been audited before? I have feelings that it is just re-writing of a codebase that got audited before.
+
+
+[03/10/2024 17:40] afriauditor
+Lol am curious what ticked u off to arrive at this conclusion
+
+{Reactions}
+😂 
+
+[03/10/2024 18:28] brivan
+I dunno myself lol, just having some feelings that some checks on the code are added as a result of an audit.
+
+
+[03/10/2024 19:21] al_qa_qa
+This is the version 5 of there contracts.
+
+They made versions, audit them, lanuch them. And if there is an issue existed they fix it and launch the second version.
+
+And we are in version 5.
+
+But there is always something, just focus and you will get 👍
+
+{Reactions}
+✅ 
+
+[03/10/2024 21:18] afriauditor
+Lol yeah I got same feeling as well
+
+
+[03/11/2024 08:35] 0xauditism
+*re-write of the Vault contract from PT V5*, so I think it is refactored, previously audited ,code
+
+
+[03/11/2024 10:03] sammytm
+Would be very interesting to see what kind of issues come out of this audit
+
+
+[03/11/2024 10:31] unpluggedtj
+Same I tried hard on this one, found nothing. Though it's my 2nd Audit only
+
+
+[03/11/2024 17:32] mgnfy_view
+It's my first competitive audit, and yeah, got through with nothing.
+
+
+[03/11/2024 20:02] C4
+**🚨 AUDIT ALERT**
+
+@🐺wardens The **PoolTogether** audit is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks. Keep an eye on #📢announcements for regular updates on how the audit is progressing through awarding 🤑🏆, judging 🧑‍⚖️ and reporting 📜. Feel free to ping a Contest-Admin if you have questions along the way!
+
+{Reactions}
+poolydance (2) poolpe_love (2) 
+
+[03/11/2024 20:13] trmid
+Thank you to everyone who participated! I am excited to see the results.
+
+{Reactions}
+🙌 (3) 
+
+[03/11/2024 20:14] jvorex
+ty for the opportunity @trmid was a fun codebase! all the best out there!
+
+{Reactions}
+poolpe_love (2) 
+
+[03/11/2024 20:15] lsaudit
+how many submissions?
+
+
+[03/11/2024 20:15] jvorex
+not released yet
+
+
+[03/11/2024 20:18] jvorex
+342
+
+{Reactions}
+thankyou (3) 
+
+[03/11/2024 20:28] sammytm
+damn
+
+
+[03/11/2024 20:29] sammytm
+can you see every submission?
+
+
+[03/11/2024 20:29] jvorex
+no ser
+
+
+[03/11/2024 20:29] jvorex
+but can see the count
+
+
+[03/11/2024 20:44] sammytm
+interesting
+
+
+[03/11/2024 21:20] infectedfuture
+Was a great experience, very clean codebase easy to understand, and the dust collector really is a great idea ! Thanks for the opportunity
+
+{Reactions}
+poolpe_love (3) 
+
+[03/13/2024 13:40] infectedfuture
+Hi @RaymondFam, if I understand correctly, first pass on submissions is done by you, then a judge will go through your pre-triage, then PJQA will open?
+
+
+[03/13/2024 14:33] raymondfam
+Correct, but the judge will only be involved after the sponsors have gone through the findings.
+
+
+[03/13/2024 14:37] infectedfuture
+thanks 🙏
+
+
+[03/18/2024 17:56] __naman_
+any idea, when the results and the report will be out ?
+
+
+[03/18/2024 20:07] 0xauditism
+results out by this week I would guess, report might take sum more, maybe next month ?
+
+
+[03/18/2024 20:12] __naman_
+ok cool
+
+
+[03/21/2024 11:51] 0xabhay.
+yes most probably since icon appearing on profiles
+
+
+[03/21/2024 14:06] iceman1405
+icon only appears if you had valid findings, right?
+
+
+[03/21/2024 14:06] al_qa_qa
+You need to be a certified warden
+
+
+[03/21/2024 14:16] al_qa_qa
+Wow that fast 😂
+
+{Reactions}
+🔥 (2) 
+
+[03/21/2024 14:17] brivan
+GG @d3e4
+
+
+[03/21/2024 14:19] brivan
+Wow, 8 Meds. I missed a lot
+
+
+[03/21/2024 14:21] al_qa_qa
+8 / 28, this means there are some solos
+
+
+[03/21/2024 14:37] al_qa_qa
+Congratulations to all participants
+
+{Reactions}
+❤️ 
+
+[03/21/2024 14:57] infectedfuture
+finally a top-10! 🙌 it was great!
+
+
+[03/21/2024 14:58] 0xabhay.
+Yes mine also but I am not satisfied I need to work hard  gg to everyone
+
+{Reactions}
+hi5 (2) 
+
+[03/21/2024 15:02] pa6kuda
+no way, no way, NO WAY
+
+{Reactions}
+🎉 (2) 
+
+[03/21/2024 15:03] pa6kuda
+I though It was obvious findings, like 10cents
+
+
+[03/21/2024 15:21] thebrittfactor (pinned)
+Wardens - Please note there was a labeling discrepancy discovered in the awarding of PoolTogether. The judge has provided clarification on their original intent and the label has been rectified accordingly. I have since deleted the awarding post here and in #📢announcements. We hope to have a new/updated award announcement in a little bit. Thanks for your patience and understanding!
+
+{Reactions}
+thankyou (6) 👍 (6) 😁 (6) 
+
+[03/21/2024 16:55] _paperparachute
+🤑 🎉  Awards for **PoolTogether**:
+
+$9,434.21 USDC » @d3e4
+$5,314.56 USDC » @0xAres
+$1,666.73 USDC » @Al-Qa-qa
+$1,189.62 USDC » @pa6kuda
+$915.43 USDC » @afriauditor
+$820.39 USDC » 0xmystery
+$802.01 USDC » @carrotsmuggler
+$685.48 USDC » @infect3d
+$616.93 USDC » @0xabhay
+$616.93 USDC » @Omik
+$616.93 USDC » @Timenov
+$577.45 USDC » CodeWasp (@kuprum @slylandro_star @spaghetticode_sentinel @audithare)
+$444.19 USDC » @Drynooo
+$440.81 USDC » @0xepley
+$378.99 USDC » @slvDev
+$340.99 USDC » DarkTower (@Kenzo @0xrex @haxatron)
+$339.08 USDC » @Fouzantanveer
+$228.49 USDC » @souilos
+$179.15 USDC » @Albahaca
+$171.95 USDC » @CodeCipher
+$165.52 USDC » @Tripathi
+$147.39 USDC » @0x11singh99
+$147.39 USDC » shamsulhaq123
+$132.61 USDC » @Abdessamed
+$132.61 USDC » @Auditor
+$132.61 USDC » @btk
+$132.61 USDC » @trachev
+$132.61 USDC » @turvy_fuzz
+$131.14 USDC » @auditism
+$131.14 USDC » @cheatc0d3
+$64.67 USDC » @ZanyBonzy
+$51.12 USDC » @SAQ
+$51.12 USDC » @hunter_w3b
+$34.38 USDC » dvrkzy
+$33.22 USDC » @McToady
+$31.75 USDC » @JCK
+$31.75 USDC » @K42 Ψ
+$31.75 USDC » @Lin
+$31.75 USDC » @Aariiif
+$31.75 USDC » clara
+$31.75 USDC » @kaveyjoe
+$31.75 USDC » @popeye
+$19.37 USDC » @0xhacksmithh
+$19.37 USDC » @SY_S
+$19.37 USDC » @dharma09
+$19.37 USDC » @unique
+$1.47 USDC » @0xJaeger
+$1.47 USDC » @0xJoyBoy03
+$1.47 USDC » @0xRiO
+$1.47 USDC » @0xkeesmark
+$1.47 USDC » @0xlemon
+$1.47 USDC » @AcT3R
+$1.47 USDC » @AgileJune
+$1.47 USDC » @Daniel526
+$1.47 USDC » @DanielTan_MetaTrust
+$1.47 USDC » @Dots
+$1.47 USDC » @Fitro
+$1.47 USDC » GoSlang
+$1.47 USDC » @Greed
+$1.47 USDC » @Krace
+$1.47 USDC » @SoosheeTheWise
+$1.47 USDC » @asui
+$1.47 USDC » @aminullah
+$1.47 USDC » @crypticdefense
+$1.47 USDC » @edger
+$1.47 USDC » @gesha17
+$1.47 USDC » @iberry
+$1.47 USDC » @kR1s
+$1.47 USDC » @leegh
+$1.47 USDC » @marqymarq10
+$1.47 USDC » @n1punp
+$1.47 USDC » @radin100
+$1.47 USDC » @sammy
+$1.47 USDC » smbv-1923
+$1.47 USDC » @valentin_s2304
+$1.47 USDC » @wangxx2026
+$1.47 USDC » @y4y
+$1.47 USDC » @yotov721
+$1.47 USDC » @yvuchev
+$1.47 USDC » @zhaojie
+
+🏁 Findings summary
+--------------------------------------—
+High risk findings: 1 unique (49 total)
+Med risk findings: 8 unique (28 total)
+Gas reports: 10 (Best: slvDev)
+QA reports: 7 (Best: 0xmystery)
+Advanced analysis reports: 15 (Best: 0xepley)
+
+Awards will be distributed on Polygon within the next week. Congratulations all!  💸 💸 💸
+
+*Note: If you participated in this audit and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.*
+
+{Reactions}
+poolydance (6) poolfrog (4) poolpe_love (6) poolspinning (2) TrophyPOOL (2) 
+
+[03/21/2024 16:57] liveactionllamac4
+Pinned a message.
+
+
+[03/21/2024 17:13] 0xabhay.
+@afriauditor congratulations bro 💪
+
+
+[03/21/2024 17:28] afriauditor
+Thanks bruh! congratulations to u too!..
+
+{Reactions}
+thankyou 
+
+[03/21/2024 17:59] 0xhelium
+What's the meaning of your nickname?
+
+
+[03/21/2024 20:35] liveactionllamac4
+**Note:** we are aware that the results from this audit are not yet displaying on our website and our dev team is looking into it. Thanks for your patience!
+
+
+[03/21/2024 20:41] afriauditor
+Itz coz am an African auditor lolxx
+
+
+[03/21/2024 20:46] 0xhelium
+Which country in Africa?
+
+
+[03/21/2024 20:50] 0xnirlin
+Wakanda
+
+{Reactions}
+😂 (11) 
+
+[03/21/2024 20:50] pa6kuda
+🤨
+
+
+[03/21/2024 20:58] afriauditor
+Apt😅... chilling with my vibranium suit atm
+
+
+[03/21/2024 20:58] afriauditor
+Helps me find solo's in contest 🤣
+
+{Reactions}
+kek_wait 
+
+[03/21/2024 23:38] 0xhelium
+Bro answer the damn question
+
+
+[03/21/2024 23:44] forgebyola
+nirlin already did
+
+{Reactions}
+👍 
+
+[03/21/2024 23:44] 0xhelium
+That was a joke
+
+
+[03/21/2024 23:44] 0xhelium
+Unless you are an American and you really don't know geography
+
+
+[03/22/2024 05:57] kartoonjoy
+OxHelium, remember not everyone wants to pinpoint their location for you.
+
+{Reactions}
+👍 (5) 
+
+[03/22/2024 06:38] forgebyola
+Unless you're provenance
+
+
+[03/22/2024 06:41] haxatron1
+😂
+
+
+[03/22/2024 21:08] mgnfy_view
+Where can I see the full report?
+
+
+[03/22/2024 21:12] itsmetechjay
+ℹ️ This channel is pending archive.   As a result, any private threads will be permanently deleted on Friday, 29 March 2024. Please make sure to grab anything you might need before then.
+
+
+[03/23/2024 14:49] owenzo
+why you so feisty mahn chill
+
+{Reactions}
+👍 
+
+[03/24/2024 11:26] praise95
+@afriauditor congrats bro
+
+
+[03/24/2024 12:48] afriauditor
+thanks bruh!
+
+
+[03/24/2024 18:33] asui0944
+@RaymondFam please check private thread sir.
+
+
+[03/25/2024 01:31] danieltan_metatrust
+@Jay | C4 @thebrittfactor | C4 please check your private thread sir.
+
+
+[03/25/2024 15:27] thebrittfactor
+I'm not seeing a private thread. Please create one and tag us if you're still having issues.
+
+
+[03/26/2024 03:11] danieltan_metatrust
+Not sure if I am the only one who got $1.47 reward for a High-risk findings 😢 https://x.com/DanielSlothx/status/1771027980556669332?s=20
+
+{Embed}
+https://twitter.com/DanielSlothx/status/1771027980556669332?s=20
+Daniel Tan (@DanielSlothx) on X
+#Code4Rena #PoolTogether Contest. It's my first high risk finding on the @code4rena, for @PoolTogether_, with a reward offffffff $1.47, OMG, due to there are a total of 49 high risk findings
+
+What should I say? Not stop findings next high risk finding if you have more spare time
+Code4rena - ARCHIVE-Q1-2024 - pooltogether-mar04 [1204906296936108122].txt_Files/GJPzyDIbUAABMgK-EA0CE.png%3Alarge
+Twitter
+
+
+[03/26/2024 03:12] danieltan_metatrust
+sent a message before
+
+{Attachments}
+Code4rena - ARCHIVE-Q1-2024 - pooltogether-mar04 [1204906296936108122].txt_Files/image-B0C4F.png
+
+
+[03/26/2024 03:29] mctoady
+Yep, the one high was $1.47 unfortunately :sad: 
+The prize pot got swallowed up by the number of really low dupe meds.
+
+{Reactions}
+😵‍💫 
+
+[03/26/2024 08:12] tigerfrake
+Damn, this how it rolls😕. But that's a step toward your `+backstage` role. Lol
+
+{Reactions}
+😂 
+
+[03/26/2024 09:16] valkataaa
+$1.47 🔥
+
+
+[03/26/2024 10:35] mgnfy_view
+Is the final report published?
+
+
+[03/27/2024 01:22] wangxx2026
+Any update on the response? 1.47*49 = 72.03 = H
+I've never paid much attention to the distribution of the prize money, and it does seem a bit unusual when you do the math.
+
+
+[03/27/2024 01:50] danieltan_metatrust
+Here is the response:
+- this H severity finding had a terrible 49 duplicates 
+- the payouts come from the pie/split/slice calculations, https://docs.code4rena.com/awarding/incentive-model-and-awards
+
+Lol, looks like I am not the only disappointed one.🙃
+
+{Embed}
+https://docs.code4rena.com/awarding/incentive-model-and-awards
+Incentive model and awards | Code4rena
+
+
+[03/27/2024 16:32] infectedfuture
+49 dups means the findings is worth = (10pts * 0.9^48) / 49
+
+{Reactions}
+☝️ 
+
+[03/27/2024 16:34] infectedfuture
+each time there's a dup, not only the value is divided by the number of dups, but also decreased by 10%, this 48 times
+
+
+[03/29/2024 00:54] itsmetechjay
+ℹ️ Reminder: this channel will be deleted in 24 hours.
+
+
+[04/01/2024 12:18] moeid3
+hi
+I checked my profile and it shows that I found one high finding in this contest. I sent so many reports for this contest but I got 1.5 $ at all.
+Your help is appreciated
+
+
+[04/01/2024 17:31] blckhv
+https://discord.com/channels/810916927919620096/1204906296936108122/1222024653997084673
+
+
+[04/10/2024 15:54] brivan
+@thebrittfactor | C4 Are the rewards for this contest sent or not yet ? I can see that contests started after this contest have already been paid out.
+
+
+[04/10/2024 16:00] al_qa_qa
+Yep, they have been sent.
+
+{Reactions}
+thankyou 
+
+[04/10/2024 16:13] thebrittfactor
+Yes, they've been sent. Please make sure you are checking your wallet via Polygon/polygonscan. Looks like these were sent on March 23rd.
+
+
+[04/10/2024 16:16] brivan
+I haven't received anything, I noticed that for another audit as well. I'm gonna open a Help Desk for that
+
+{Reactions}
+👍 
+
+[04/10/2024 16:29] kartoonjoy
+Your payment wallet is correct already?
+
+
+[04/10/2024 16:34] brivan
+Yes, it is
+
+
+[04/10/2024 16:34] brivan
+I've created a help Desk
+
+
+==============================================================
+Exported 199 message(s)
+==============================================================
